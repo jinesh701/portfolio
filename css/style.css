@@ -1,14 +1,11 @@
 body {
-  margin: 0;
-  padding: 0;
+  padding-top: 10px;
   font-family: 'open sans', sans-serif;
   font-size: 15px;
 }
 
-.name {
+.center {
   text-align: center;
-  font-family: 'raleway', sans-serif;
-  font-size: 44px;
 }
 
 .hr-style {
@@ -20,4 +17,60 @@ body {
     rgba(0, 0, 0, 0.75),
     rgba(0, 0, 0, 0)
   );
+}
+
+.nav-links {
+  font-size: 18px;
+  text-decoration: none;
+  margin: 30px;
+}
+
+a:link,
+a:visited {
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.name {
+  text-align: center;
+  font-family: 'raleway', sans-serif;
+  font-size: 44px;
+}
+
+.technology-list {
+  list-style: none;
+  font-size: 20px;
+}
+
+.list-item {
+  padding: 5px;
+}
+
+.coding-img {
+  width: 200px;
+  padding-left: 30px;
+}
+
+.home-page-section {
+  padding-top: 60px;
+}
+
+.about-me-section {
+  display: none;
+  padding-top: 60px;
+}
+
+.hobby-div {
+  padding-top: 30px;
+}
+
+.hobbies-list {
+  list-style: none;
+}
+
+.projects-section {
+  display: none;
 }
