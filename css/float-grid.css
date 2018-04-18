@@ -78,3 +78,15 @@
     width: 100%;
   }
 }
+
+@media screen and (min-width: 256px) and (max-width: 640px) {
+  .home-page,
+  .projects,
+  .about {
+    padding-bottom: 10px;
+  }
+
+  .nav-links {
+    font-size: 22px;
+  }
+}
