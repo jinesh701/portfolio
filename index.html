@@ -7,21 +7,96 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/float-grid.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300,400" rel="stylesheet">
 </head>
 
 <body>
-    <p class="name">Jinesh Patel</p>
 
-
-    <section class="about-me">
-        <div class="row">
-            <hr class="hr-style">
-            <p>I am a Full Stack Web Developer</p>
+    <section class="nav-bar">
+        <div class="row center">
+            <div class="col-4">
+                <a href='#' class='nav-links home-page'>Home</a>
+            </div>
+            <div class="col-4">
+                <a href="#" class='nav-links projects'>Projects</a>
+            </div>
+            <div class="col-4">
+                <a href="#" class='nav-links about'>About Me</a>
+            </div>
         </div>
     </section>
+
+    <div class="row">
+        <div class="col-12">
+            <hr class="hr-style">
+        </div>
+    </div>
+
+    <section class="home-page-section">
+        <div class="row">
+            <div class="col-12">
+                <h1 class="name">Jinesh Patel</h1>
+                <p class="center">I am a
+                    <b>Full Stack Web Developer</b>. I specialize in the following:</p>
+                <ul class="center technology-list">
+                    <li class="list-item">HTML</li>
+                    <li class="list-item">CSS</li>
+                    <li class="list-item">Javascript</li>
+                    <li class="list-item">Node JS</li>
+                    <li class="list-item">React JS</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 center">
+                <img src="./img/coding.svg" class="coding-img">
+            </div>
+        </div>
+    </section>
+
+    <section class="about-me-section">
+        <div class="row">
+            <div class="col-12">
+                <p class="center">I was always told that I was "good with computers" from a young age. One day I decided to dive into HTML
+                    and I haven't looked back since. I love the idea of being able to create apps to solve everyday problems
+                    for myself and others. I enjoy learing about different frameworks and discovering the benefits of using
+                    them (my current favorite being React JS).</p>
+            </div>
+
+            <div class="col-12 hobby-div">
+                <p class="center">
+                    <b>When I'm not coding I enjoy:</b>
+                </p>
+
+                <ul class="center hobbies-list">
+                    <li class="list-item">Gaming</li>
+                    <li class="list-item">Film</li>
+                    <li class="list-item">Music</li>
+                    <li class="list-item">Reading</li>
+                    <li class="list-item">Hiking</li>
+                    <li class="list-item">Photography</li>
+                    <li class="list-item">Tech</li>
+                    <li class="list-item">Coffee</li>
+                    <li class="list-item">Sports (NBA & NFL)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects-section">
+        <div class="row">
+            <div class="col-12">
+                <p>Projects</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="./js/app.js"></script>
 
 </body>
 
