@@ -8,7 +8,7 @@ function showHomePage() {
 }
 
 function showAboutMe() {
-  $('.about').click(() => {
+  $('.about').click(event => {
     event.preventDefault();
     $('.home-page-section').hide();
     $('.projects-section').hide();
@@ -17,7 +17,7 @@ function showAboutMe() {
 }
 
 function showProjects() {
-  $('.projects').click(() => {
+  $('.projects').click(event => {
     event.preventDefault();
     $('.home-page-section').hide();
     $('.about-me-section').hide();
