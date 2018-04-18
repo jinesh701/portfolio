@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -16,17 +17,19 @@
 <body>
 
     <section class="nav-bar">
-        <div class="row center">
-            <div class="col-4">
-                <a href='#' class='nav-links home-page'>Home</a>
+        <nav role="navigation">
+            <div class="row center">
+                <div class="col-4 home-page">
+                    <a href='#' class='nav-links'>Home</a>
+                </div>
+                <div class="col-4 projects">
+                    <a href="#" class='nav-links'>Projects</a>
+                </div>
+                <div class="col-4 about">
+                    <a href="#" class='nav-links'>About Me</a>
+                </div>
             </div>
-            <div class="col-4">
-                <a href="#" class='nav-links projects'>Projects</a>
-            </div>
-            <div class="col-4">
-                <a href="#" class='nav-links about'>About Me</a>
-            </div>
-        </div>
+        </nav>
     </section>
 
     <div class="row">
@@ -35,67 +38,162 @@
         </div>
     </div>
 
-    <section class="home-page-section">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="name">Jinesh Patel</h1>
-                <p class="center">I am a
-                    <b>Full Stack Web Developer</b>. I specialize in the following:</p>
-                <ul class="center technology-list">
-                    <li class="list-item">HTML</li>
-                    <li class="list-item">CSS</li>
-                    <li class="list-item">Javascript</li>
-                    <li class="list-item">Node JS</li>
-                    <li class="list-item">React JS</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-12 center">
-                <img src="./img/coding.svg" class="coding-img">
-            </div>
-        </div>
-    </section>
-
-    <section class="about-me-section">
-        <div class="row">
-            <div class="col-12">
-                <p class="center">I was always told that I was "good with computers" from a young age. One day I decided to dive into HTML
-                    and I haven't looked back since. I love the idea of being able to create apps to solve everyday problems
-                    for myself and others. I enjoy learing about different frameworks and discovering the benefits of using
-                    them (my current favorite being React JS).</p>
+    <main role="main">
+        <section class="home-page-section">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="name">Jinesh Patel</h1>
+                    <p class="center">I am a
+                        <b>Full Stack Web Developer</b>. I specialize in the following:</p>
+                    <ul class="center technology-list col-12">
+                        <li class="list-item">HTML</li>
+                        <li class="list-item">CSS</li>
+                        <li class="list-item">Javascript</li>
+                        <li class="list-item">Node JS</li>
+                        <li class="list-item">React JS</li>
+                    </ul>
+                </div>
             </div>
 
-            <div class="col-12 hobby-div">
-                <p class="center">
-                    <b>When I'm not coding I enjoy:</b>
-                </p>
-
-                <ul class="center hobbies-list">
-                    <li class="list-item">Gaming</li>
-                    <li class="list-item">Film</li>
-                    <li class="list-item">Music</li>
-                    <li class="list-item">Reading</li>
-                    <li class="list-item">Hiking</li>
-                    <li class="list-item">Photography</li>
-                    <li class="list-item">Tech</li>
-                    <li class="list-item">Coffee</li>
-                    <li class="list-item">Sports (NBA & NFL)</li>
-                </ul>
+            <div class="row contact">
+                <div class="col-12 center">
+                    <a href="mailto:jinesh701@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/jinesh701/" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jineshpatel1" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="projects-section">
-        <div class="row">
-            <div class="col-12">
-                <p>Projects</p>
+        <section class="about-me-section">
+            <div class="row">
+                <div class="col-12">
+                    <p class="center">I was always told that I was "good with computers" from a young age. One day I decided to dive into HTML
+                        and I haven't looked back since. I love the idea of being able to create apps to solve everyday problems
+                        for myself and others. I enjoy learing about different frameworks and discovering the benefits of
+                        using them (my current favorite being React JS).</p>
+                </div>
+
+                <div class="col-12 hobby-div">
+                    <p class="center">
+                        <b>When I'm not coding I enjoy:</b>
+                    </p>
+
+                    <ul class="center hobbies-list">
+                        <li class="list-item">Gaming</li>
+                        <li class="list-item">Film</li>
+                        <li class="list-item">Music</li>
+                        <li class="list-item">Reading</li>
+                        <li class="list-item">Hiking</li>
+                        <li class="list-item">Photography</li>
+                        <li class="list-item">Tech</li>
+                        <li class="list-item">Coffee</li>
+                        <li class="list-item">Sports (NBA & NFL)</li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section class="projects-section">
+            <div class="row">
+                <div class="row-12 project-1">
+                    <div class="card">
+                        <img src="./img/game-on.png" alt="Image of GameOn web app" class="project-img">
+                        <div class="container">
+                            <h4>
+                                <b class="project-name">GameOn</b>
+                            </h4>
+                            <p>An app that provides users with information about the game they are searching for and the top
+                                3 current live Twitch streams for the game.</p>
+                            <p>
+                                <b>Made with: HTML, CSS, Javascript, jQuery</b>
+                            </p>
+
+                            <div class="btn-container">
+                                <a href="https://github.com/jinesh701/GameOn/" target="_blank">
+                                    <button class='button'>Github</button>
+                                </a>
+
+                                <a href="https://jinesh701.github.io/GameOn/" target="_blank">
+                                    <button class='button'>Live Demo</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row-12 project-2">
+                    <div class="card">
+                        <img src="./img/cineflix.png" alt="Image of Cineflix web app" class="project-img">
+                        <div class="container">
+                            <h4>
+                                <b class="project-name">Cineflix</b>
+                            </h4>
+                            <p>An app that provides users with a way to track the films and television shows they want to watch
+                                and have already watched.</p>
+                            <p>
+                                <b>
+                                    Made with: Node JS, HTML, CSS, Javascript, jQuery
+                                </b>
+                            </p>
+
+                            <div class="btn-container">
+                                <a href="https://github.com/jinesh701/CineFlix/" target="_blank">
+                                    <button class='button'>Github</button>
+                                </a>
+
+                                <a href="https://murmuring-mountain-83480.herokuapp.com/" target="_blank">
+                                    <button class='button'>Live Demo</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 project-3">
+                    <div class="card">
+                        <img src="./img/bittrack.png" alt="Image of Bittrack web app" class="project-img">
+                        <div class="container">
+                            <h4>
+                                <b class="project-name">Bittrack</b>
+                            </h4>
+                            <p>An app that provides users with a way to track cryptocurrencies and create portfolios to keep
+                                track of their investments.
+                            </p>
+                            <p>
+                                <b>
+                                    Made with: React, Redux, Node JS, HTML, CSS, Javascript
+                                </b>
+                            </p>
+
+                            <div class="btn-container">
+                                <a href="https://github.com/jinesh701/bittrack-client/" target="_blank">
+                                    <button class='button'>Github</button>
+                                </a>
+
+                                <a href="https://zen-shannon-b0b3a3.netlify.com/" target="_blank">
+                                    <button class='button'>Live Demo</button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
     <script src="./js/app.js"></script>
 
 </body>
